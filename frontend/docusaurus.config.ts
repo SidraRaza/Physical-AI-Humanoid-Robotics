@@ -60,7 +60,8 @@ const config: Config = {
     ],
   ],
 
-  plugins: [path.resolve(__dirname, './frontend/plugins/content-loader')], // Add your custom plugin here
+  plugins: [path.resolve(__dirname, './plugins/content-loader')],
+ // Add your custom plugin here
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
