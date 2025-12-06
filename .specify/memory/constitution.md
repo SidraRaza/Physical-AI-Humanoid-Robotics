@@ -1,55 +1,74 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report
+Version change: None → 1.0.0
+List of modified principles:
+  - None
+Added sections:
+  - Constraints
+  - Key Features
+Removed sections:
+  - None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending
+  - .specify/templates/spec-template.md: ⚠ pending
+  - .specify/templates/tasks-template.md: ⚠ pending
+  - .specify/templates/commands/*.md: ⚠ pending
+Follow-up TODOs:
+  - None
+-->
+# Physical AI & Humanoid Robotics — Essentials Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Simplicity
+All aspects of the project, from code to UI to architecture, must prioritize simplicity for ease of understanding, maintenance, and learning.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Accuracy
+Content and RAG chatbot responses must be factually correct and derived solely from the book's text.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Minimalism
+Avoid unnecessary features, dependencies, or complexity. Focus on core functionality and a clean, uncluttered user experience.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Fast Builds
+The Docusaurus build process must be optimized for speed to enable rapid iteration and deployment.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Free-tier Architecture
+All chosen technologies and services (Qdrant, Neon, FastAPI) must be compatible with free-tier usage to minimize cost barriers.
 
-### [PRINCIPLE_6_NAME]
+### RAG Answers ONLY from Book Text
+The RAG chatbot's knowledge base is strictly limited to the content of the textbook. It must not generate responses from external sources or hallucinate information.
 
+## Constraints
 
-[PRINCIPLE__DESCRIPTION]
+- No heavy GPU usage for any component (training, inference, etc.).
+- Minimal embedding sizes and processing to reduce resource requirements.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Key Features
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Docusaurus-based interactive textbook for content delivery.
+- Integrated RAG chatbot using Qdrant (vector DB), Neon (PostgreSQL), and FastAPI (backend).
+- "Select-text → Ask AI" functionality for direct interaction with book content.
+- Optional Urdu localization and personalization features.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution defines the foundational principles and guidelines for the "Physical AI & Humanoid Robotics — Essentials" project.
+Amendments require review and approval by relevant stakeholders.
+Compliance reviews will be conducted periodically to ensure adherence to these principles.
+All changes and additions to the project must demonstrate alignment with these core principles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+<!-- Sync Impact Report
+Version change: 1.0.0 → 1.0.1
+List of modified principles:
+  - None
+Added sections:
+  - None
+Removed sections:
+  - None
+Templates requiring updates:
+  - .specify/templates/plan-template.md: ⚠ pending
+  - .specify/templates/spec-template.md: ⚠ pending
+  - .specify/templates/tasks-template.md: ⚠ pending
+  - .specify/templates/commands/*.md: ⚠ pending
+Follow-up TODOs:
+  - None
+-->
+**Version**: 1.0.1 | **Ratified**: 2025-12-03 | **Last Amended**: 2025-12-03

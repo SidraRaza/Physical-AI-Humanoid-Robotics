@@ -1,0 +1,48 @@
+openapi: 3.0.0
+info:
+  title: RAG Chatbot API
+  version: 1.0.0
+description: API for interacting with the AI-native textbook's RAG chatbot.
+servers:
+  - url: /api
+    description: Local development server
+paths:
+  /chat/query:
+    post:
+      summary: Submit a query to the RAG chatbot
+      operationId: postChatMessage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: The user's question.
+                context_text:
+                  type: string
+                  description: Optional text selected by the user to provide additional context for the query.
+      responses:
+        '200':
+          description: Successful response from the chatbot
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    description: The chatbot's answer.
+                  sources:
+                    type: array
+                    items:
+                      type: string
+                    description: List of source document snippets (e.g., chapter sections) used to generate the response.
+        '400':
+          description: Invalid request
+        '500':
+          description: Internal server error

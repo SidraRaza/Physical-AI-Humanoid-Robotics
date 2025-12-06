@@ -1,0 +1,42 @@
+# C:/Users/ahed8/my-ai-textbook/.github/workflows/deploy-frontend.yml
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - 001-textbook-generation # Change to your main branch (e.g., 'main' or 'master')
+
+permissions:
+  contents: write # Allows the workflow to write to the gh-pages branch
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Or your preferred Node.js version
+
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm ci
+
+      - name: Build Docusaurus website
+        run: |
+          cd frontend
+          npm run build
+        env:
+          REACT_APP_API_BASE_URL: ${{ secrets.RAILWAY_BACKEND_URL }} # Inject backend URL as env var
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/build # Directory where Docusaurus outputs static files
+          publish_branch: gh-pages # The branch GitHub Pages will serve from
