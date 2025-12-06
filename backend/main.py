@@ -7,7 +7,7 @@ from fastembed import TextEmbedding
 
 from backend.rag_chatbot.model import ChatRequest, ChatResponse, SourceDocument
 from backend.rag_chatbot.qdrant_client import QdrantManager
-from backend.rag_chatbot.openai_agent import OpenAIAgent
+from backend.rag_chatbot.gemini_agent import GeminiAgent
 from backend.rag_chatbot.skill_manager import SkillManager
 
 load_dotenv() # Load environment variables from .env file
@@ -22,15 +22,15 @@ origins = [origin.strip() for origin in allowed_origins_str.split(',')]
 # Initialize RAG components
 QDRANT_HOST = os.getenv("QDRANT_HOST")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-if not all([QDRANT_HOST, QDRANT_API_KEY, OPENAI_API_KEY]):
-    print("Warning: Missing one or more RAG environment variables (QDRANT_HOST, QDRANT_API_KEY, OPENAI_API_KEY).")
+if not all([QDRANT_HOST, QDRANT_API_KEY, GEMINI_API_KEY]):
+    print("Warning: Missing one or more RAG environment variables (QDRANT_HOST, QDRANT_API_KEY, GEMINI_API_KEY).")
     print("RAG chatbot functionality may be limited or unavailable.")
 
 skill_manager = SkillManager()
 qdrant_manager = QdrantManager(host=QDRANT_HOST, api_key=QDRANT_API_KEY) if QDRANT_HOST and QDRANT_API_KEY else None
-openai_agent = OpenAIAgent(api_key=OPENAI_API_KEY, skill_manager=skill_manager) if OPENAI_API_KEY else None
+gemini_agent = GeminiAgent(api_key=GEMINI_API_KEY, skill_manager=skill_manager) if GEMINI_API_KEY else None
 embedding_model = TextEmbedding() # Initialize embedding model
 
 app.add_middleware(
@@ -51,7 +51,7 @@ async def health_check():
 
 @app.post("/chat", response_model=ChatResponse)
 async def chat_with_rag(request: ChatRequest):
-    if not qdrant_manager or not openai_agent:
+    if not qdrant_manager or not gemini_agent:
         return ChatResponse(response="RAG chatbot is not fully configured. Please check environment variables.", source_documents=[])
 
     query_text = request.query
@@ -76,7 +76,7 @@ async def chat_with_rag(request: ChatRequest):
             ))
 
     # Generate response using OpenAI Agent (which can now use skills)
-    response_content = openai_agent.generate_response(query_text, context_docs)
+    response_content = gemini_agent.generate_response(query_text, context_docs)
 
     return ChatResponse(response=response_content, source_documents=source_documents)
 
