@@ -33,3 +33,4 @@ Thumbs.db
 .idea/
 *.log
 coverage/
+.npm_cache_temp/

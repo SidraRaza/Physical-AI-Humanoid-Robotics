@@ -1,3 +1,4 @@
+import path from 'path';
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -18,7 +19,7 @@ const config: Config = {
   url: 'https://sidraraza.github.io',
 
   // Base URL: '/' for Vercel, '/repo-name/' for GitHub Pages
-  baseUrl: isVercel ? '/' : '/Physical-AI-Humanoid-Robotics/',
+  baseUrl: '/Physical-AI-Humanoid-Robotics/',
 
   // GitHub pages config
   organizationName: 'SidraRaza',
@@ -58,6 +59,8 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
+  plugins: [path.resolve(__dirname, './frontend/plugins/content-loader')], // Add your custom plugin here
 
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
