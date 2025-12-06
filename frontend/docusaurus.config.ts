@@ -81,6 +81,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/chatbot', label: 'Chatbot', position: 'left'},
         {
           href: 'https://github.com/SidraRaza/Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
