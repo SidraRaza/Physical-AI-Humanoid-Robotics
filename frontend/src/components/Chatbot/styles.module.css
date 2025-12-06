@@ -1,0 +1,117 @@
+.chatbotContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  overflow: hidden;
+  box-shadow: var(--ifm-shadow-md);
+}
+
+.messagesContainer {
+  flex-grow: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: var(--ifm-background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  border-bottom-left-radius: 2px;
+}
+
+.inputContainer {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-background-color);
+}
+
+.inputContainer input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-border-radius);
+  margin-right: 10px;
+}
+
+.inputContainer button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--ifm-border-radius);
+  background-color: var(--ifm-color-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.inputContainer button:disabled {
+  background-color: var(--ifm-color-emphasis-400);
+  cursor: not-allowed;
+}
+
+.selectedTextPreview {
+  padding: 10px 15px;
+  background-color: var(--ifm-color-info-background);
+  color: var(--ifm-color-info);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9em;
+}
+
+.selectedTextPreview button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: 1px solid var(--ifm-color-info);
+  border-radius: var(--ifm-border-radius);
+  background-color: transparent;
+  color: var(--ifm-color-info);
+  cursor: pointer;
+}
+
+.sources {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: var(--ifm-font-color-secondary);
+}
+
+.sources ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 5px;
+}
+
+.sources li {
+  margin-bottom: 2px;
+}
+
+.sources a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.sources a:hover {
+  text-decoration: underline;
+}
