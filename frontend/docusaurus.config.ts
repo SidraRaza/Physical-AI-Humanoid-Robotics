@@ -11,7 +11,7 @@ const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 
 const config: Config = {
   title: 'Physical AI Textbook',
-  tagline: 'Deep Learning for Beginners',
+  tagline: 'A comprehensive guide to building intelligent physical systems',
   favicon: 'img/favicon.ico',
 
   future: {
