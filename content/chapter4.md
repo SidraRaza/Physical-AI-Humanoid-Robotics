@@ -1,3 +1,9 @@
+---
+title: "Chapter 4: Convolutional Neural Networks (CNNs)"
+description: "Explore CNNs for image recognition, including convolutional layers, pooling layers, and architectures like LeNet, AlexNet, and VGG."
+sidebar_position: 4
+---
+
 ### Convolutional Neural Networks (CNNs) for Image Recognition: A Beginner's Guide
 
 This guide introduces the fundamental concepts of Convolutional Neural Networks (CNNs) and their application in image recognition, suitable for a novice audience.

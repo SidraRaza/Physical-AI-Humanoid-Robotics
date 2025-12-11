@@ -1,3 +1,9 @@
+---
+title: "Appendix C: Further Reading and Resources"
+description: "Curated list of books, courses, tutorials, and papers for further deep learning study."
+sidebar_position: 10
+---
+
 # Appendix C: Further Reading and Resources
 
 This appendix provides a curated list of resources for beginners looking to deepen their understanding of deep learning. These resources cover foundational concepts, practical implementations, and avenues for further exploration, suitable for those new to the field.

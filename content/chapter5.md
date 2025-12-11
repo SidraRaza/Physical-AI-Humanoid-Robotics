@@ -1,3 +1,9 @@
+---
+title: "Chapter 5: Recurrent Neural Networks (RNNs)"
+description: "Learn about RNNs for sequence data, including LSTMs, GRUs, and applications in NLP and time series forecasting."
+sidebar_position: 5
+---
+
 ### Recurrent Neural Networks (RNNs) for Sequence Data: A Beginner's Guide
 
 ### Introduction to Sequence Modeling

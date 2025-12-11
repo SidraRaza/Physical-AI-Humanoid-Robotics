@@ -15,11 +15,11 @@ const config: Config = {
     v4: true,
   },
 
-  // Production URL
-  url: 'https://sidraraza.github.io',
+  // Production URL - adjust based on deployment platform
+  url: isVercel ? 'https://my-ai-textbook.vercel.app' : 'https://sidraraza.github.io',
 
   // Base URL: '/' for Vercel, '/repo-name/' for GitHub Pages
-  baseUrl: '/Physical-AI-Humanoid-Robotics/',
+  baseUrl: isVercel ? '/' : '/Physical-AI-Humanoid-Robotics/',
 
   // GitHub pages config
   organizationName: 'SidraRaza',

@@ -1,3 +1,9 @@
+---
+title: "Appendix B: Deep Learning Glossary"
+description: "Comprehensive glossary of deep learning terms and definitions for beginners."
+sidebar_position: 9
+---
+
 **Deep Learning Glossary for Beginners**
 
 This glossary provides clear and concise definitions for key deep learning terms, focusing on accessibility for a novice audience. Terms are drawn from Chapters 1-7 and Appendix A of the textbook.

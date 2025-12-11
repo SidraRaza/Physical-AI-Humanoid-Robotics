@@ -1,3 +1,9 @@
+---
+title: "Appendix A: Setting Up Your Environment"
+description: "Step-by-step guide for setting up a deep learning environment with Python, virtual environments, TensorFlow/PyTorch, and GPU configuration."
+sidebar_position: 8
+---
+
 ### Appendix A: Setting Up Your Deep Learning Environment
 
 Setting up a robust deep learning environment is the first crucial step on your journey into artificial intelligence. This appendix provides a step-by-step guide for beginners, covering essential tools, framework installations, and considerations for GPU acceleration.

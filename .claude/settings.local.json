@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1:*)"
     ],
     "deny": [],
     "ask": []

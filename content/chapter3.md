@@ -1,3 +1,9 @@
+---
+title: "Chapter 3: Building Your First Neural Network"
+description: "A practical guide to building your first neural network, covering data preprocessing, training concepts, and deep learning frameworks."
+sidebar_position: 3
+---
+
 Neural networks are computational models inspired by the human brain, designed to recognize patterns and make predictions. Building your first neural network involves several fundamental steps:
 
 ### 1. Data Preprocessing and Feature Scaling

@@ -1,3 +1,9 @@
+---
+title: "Chapter 1: Introduction to Deep Learning"
+description: "An introduction to Deep Learning, its relationship to AI and Machine Learning, key concepts, and why it's prominent today."
+sidebar_position: 1
+---
+
 ## Introduction to Deep Learning for Beginners
 
 Deep Learning is a fascinating and rapidly evolving field that sits at the cutting edge of Artificial Intelligence. To understand deep learning, it's helpful to first grasp its broader context within AI and Machine Learning.

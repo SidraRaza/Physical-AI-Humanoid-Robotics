@@ -1,3 +1,9 @@
+---
+title: "Chapter 6: Beyond Basic Architectures"
+description: "Explore advanced concepts including transfer learning, fine-tuning, autoencoders, and Generative Adversarial Networks (GANs)."
+sidebar_position: 6
+---
+
 ## Beyond Basic Architectures for Beginners
 
 As you delve deeper into machine learning, you'll encounter advanced architectures and techniques that build upon foundational concepts. Here's an introduction to some powerful ideas:

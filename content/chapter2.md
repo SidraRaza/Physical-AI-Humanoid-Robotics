@@ -1,3 +1,9 @@
+---
+title: "Chapter 2: Neural Network Fundamentals"
+description: "Learn the core components of neural networks including neurons, activation functions, feedforward networks, loss functions, and optimization algorithms."
+sidebar_position: 2
+---
+
 Neural networks are a foundational concept in artificial intelligence, designed to mimic the human brain's ability to learn and make decisions. For beginners, understanding a few core components is key:
 
 ### Neuron Model

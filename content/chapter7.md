@@ -1,3 +1,9 @@
+---
+title: "Chapter 7: Ethics and Future Trends"
+description: "Understand ethical considerations in AI including bias, interpretability, and societal impact, plus emerging trends in deep learning."
+sidebar_position: 7
+---
+
 Deep learning, a powerful subset of artificial intelligence, enables computers to learn from vast amounts of data using neural networks, mimicking the human brain. While offering immense potential, it also presents significant ethical challenges and is continuously evolving with new trends.
 
 Here are the key concepts for beginners:
