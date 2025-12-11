@@ -10,7 +10,7 @@ const isVercel = process.env.VERCEL === '1';
 const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 
 const config: Config = {
-  title: 'My AI Textbook',
+  title: 'Physical AI Textbook',
   tagline: 'Deep Learning for Beginners',
   favicon: 'img/favicon.ico',
 
@@ -74,9 +74,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My AI Textbook',
+      title: 'Physical AI Textbook',
       logo: {
-        alt: 'My AI Textbook Logo',
+        alt: 'Physical AI Textbook Logo',
         src: 'img/logo.svg',
       },
       items: [
