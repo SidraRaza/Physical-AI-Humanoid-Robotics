@@ -3,12 +3,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// Determine if running on Vercel via environment variable
+// Determine deployment platform via environment variables
+// VERCEL is set to '1' on Vercel builds
+// CI is typically set on GitHub Actions
 const isVercel = process.env.VERCEL === '1';
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 
 const config: Config = {
   title: 'My AI Textbook',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Deep Learning for Beginners',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -16,10 +19,12 @@ const config: Config = {
   },
 
   // Production URL - adjust based on deployment platform
-  url: isVercel ? 'https://my-ai-textbook.vercel.app' : 'https://sidraraza.github.io',
+  url: isVercel
+    ? 'https://physical-ai-humanoid-robotics-roan.vercel.app'
+    : 'https://sidraraza.github.io',
 
-  // Base URL: '/' for Vercel, '/repo-name/' for GitHub Pages
-  baseUrl: isVercel ? '/' : '/Physical-AI-Humanoid-Robotics/',
+  // Base URL: '/' for Vercel (root domain), '/repo-name/' for GitHub Pages (subdirectory)
+  baseUrl: isVercel ? '/' : (isGitHubPages ? '/Physical-AI-Humanoid-Robotics/' : '/'),
 
   // GitHub pages config
   organizationName: 'SidraRaza',
