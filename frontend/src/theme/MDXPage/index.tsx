@@ -17,6 +17,16 @@ interface Props {
   };
 }
 
+const styles: Record<string, React.CSSProperties> = {
+  main: {
+    paddingTop: '2rem',
+    paddingBottom: '4rem',
+  },
+  article: {
+    maxWidth: '100%',
+  },
+};
+
 export default function MDXPage(props: Props): JSX.Element {
   const {content: MDXPageContent, metadata} = props;
 
@@ -35,10 +45,10 @@ export default function MDXPage(props: Props): JSX.Element {
       )}>
       <PageMetadata title={title} description={description} />
       <Layout>
-        <main className="container container--fluid margin-vert--lg">
+        <main className="container container--fluid" style={styles.main}>
           <div className="row">
             <div className="col col--8 col--offset-2">
-              <article>
+              <article className="markdown" style={styles.article}>
                 <MDXContent>
                   <MDXPageContent />
                 </MDXContent>

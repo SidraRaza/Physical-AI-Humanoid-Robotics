@@ -3,35 +3,34 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import os
 from dotenv import load_dotenv
-from fastembed import TextEmbedding
 
-from backend.rag_chatbot.model import ChatRequest, ChatResponse, SourceDocument
-from backend.rag_chatbot.qdrant_client import QdrantManager
-from backend.rag_chatbot.gemini_agent import GeminiAgent
-from backend.rag_chatbot.skill_manager import SkillManager
+from rag_chatbot.model import ChatRequest, ChatResponse
+from rag_chatbot.gemini_chat_agent import GeminiChatAgent
 
-load_dotenv() # Load environment variables from .env file
+load_dotenv()  # Load environment variables from .env file
 
-app = FastAPI()
+app = FastAPI(
+    title="Physical AI Textbook API",
+    description="Backend API for the Physical AI Textbook chatbot powered by Gemini",
+    version="1.0.0"
+)
 
 # Retrieve allowed origins from environment variable, split by comma
-# Default to http://localhost:3000 for local development if FRONTEND_URL is not set
-allowed_origins_str = os.getenv("FRONTEND_URL", "http://localhost:3000,https://sidraraza.github.io/Physical-AI-Humanoid-Robotics")
+allowed_origins_str = os.getenv(
+    "FRONTEND_URL",
+    "http://localhost:3000,https://sidraraza.github.io/Physical-AI-Humanoid-Robotics"
+)
 origins = [origin.strip() for origin in allowed_origins_str.split(',')]
 
-# Initialize RAG components
-QDRANT_HOST = os.getenv("QDRANT_HOST")
-QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
+# Initialize Gemini agent
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-if not all([QDRANT_HOST, QDRANT_API_KEY, GEMINI_API_KEY]):
-    print("Warning: Missing one or more RAG environment variables (QDRANT_HOST, QDRANT_API_KEY, GEMINI_API_KEY).")
-    print("RAG chatbot functionality may be limited or unavailable.")
-
-skill_manager = SkillManager()
-qdrant_manager = QdrantManager(host=QDRANT_HOST, api_key=QDRANT_API_KEY) if QDRANT_HOST and QDRANT_API_KEY else None
-gemini_agent = GeminiAgent(api_key=GEMINI_API_KEY, skill_manager=skill_manager) if GEMINI_API_KEY else None
-embedding_model = TextEmbedding() # Initialize embedding model
+if not GEMINI_API_KEY:
+    print("Warning: GEMINI_API_KEY not set. Chatbot functionality will be unavailable.")
+    chat_agent = None
+else:
+    chat_agent = GeminiChatAgent(api_key=GEMINI_API_KEY)
+    print("Gemini agent initialized successfully.")
 
 app.add_middleware(
     CORSMiddleware,
@@ -41,44 +40,40 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 async def read_root():
-    return {"message": "Welcome to the FastAPI backend!"}
+    return {"message": "Welcome to the Physical AI Textbook API!"}
+
 
 @app.get("/health")
 async def health_check():
-    return {"status": "ok", "message": "Backend is healthy"}
+    return {
+        "status": "ok",
+        "message": "Backend is healthy",
+        "gemini_configured": chat_agent is not None
+    }
+
 
 @app.post("/chat", response_model=ChatResponse)
-async def chat_with_rag(request: ChatRequest):
-    if not qdrant_manager or not gemini_agent:
-        return ChatResponse(response="RAG chatbot is not fully configured. Please check environment variables.", source_documents=[])
+async def chat(request: ChatRequest):
+    """
+    Chat endpoint that uses Gemini to answer questions about deep learning.
+    """
+    if not chat_agent:
+        return ChatResponse(
+            response="Chatbot is not configured. Please set GEMINI_API_KEY environment variable.",
+            source_documents=[]
+        )
 
-    query_text = request.query
-    if request.selected_text:
-        query_text = f"Based on the selected text: '{request.selected_text}', {request.query}"
+    # Generate response using Gemini
+    response_content = chat_agent.generate_response(
+        query=request.query,
+        selected_text=request.selected_text
+    )
 
-    # Embed the query using fastembed
-    query_vector = embedding_model.embed(query_text).tolist()[0]
+    return ChatResponse(response=response_content, source_documents=[])
 
-    # Search Qdrant for relevant documents
-    search_results_raw = qdrant_manager.search_vectors(query_vector, limit=3)
-    context_docs = []
-    source_documents = []
-    for hit in search_results_raw:
-        payload = hit.get("payload", {})
-        if "excerpt" in payload:
-            context_docs.append(payload["excerpt"])
-            source_documents.append(SourceDocument(
-                title=payload.get("title", "Unknown"),
-                url=payload.get("url", "#"),
-                excerpt=payload.get("excerpt", "")
-            ))
-
-    # Generate response using OpenAI Agent (which can now use skills)
-    response_content = gemini_agent.generate_response(query_text, context_docs)
-
-    return ChatResponse(response=response_content, source_documents=source_documents)
 
 if __name__ == "__main__":
     import uvicorn
