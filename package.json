@@ -1,0 +1,18 @@
+{
+  "name": "my-ai-textbook",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix frontend/dashboard",
+    "build": "npm run build --prefix frontend/dashboard",
+    "start": "npm run start --prefix frontend/dashboard",
+    "lint": "npm run lint --prefix frontend/dashboard",
+    "install:dashboard": "npm install --prefix frontend/dashboard",
+    "install:docs": "npm install --prefix frontend",
+    "build:docs": "npm run build --prefix frontend",
+    "dev:docs": "npm run start --prefix frontend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
