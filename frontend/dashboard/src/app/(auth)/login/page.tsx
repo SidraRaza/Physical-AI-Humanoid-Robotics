@@ -1,15 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { signIn } from '@/lib/auth-client';
 import { motion } from 'framer-motion';
 
 /**
- * Login Page - Premium UI with glassmorphism and animations
+ * Login Form Component - uses useSearchParams
  */
-export default function LoginPage() {
+function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const redirect = searchParams.get('redirect') || '/dashboard';
@@ -219,5 +219,21 @@ export default function LoginPage() {
         </Link>
       </motion.div>
     </div>
+  );
+}
+
+/**
+ * Login Page - wraps LoginForm in Suspense for useSearchParams
+ */
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="card glass backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-2xl p-8 text-center">
+        <div className="animate-spin h-8 w-8 border-4 border-indigo-500 border-t-transparent rounded-full mx-auto"></div>
+        <p className="mt-4 text-slate-600 dark:text-slate-400">Loading...</p>
+      </div>
+    }>
+      <LoginForm />
+    </Suspense>
   );
 }
