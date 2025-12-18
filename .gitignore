@@ -23,6 +23,7 @@ dist/
 .coverage
 htmlcov/
 .mypy_cache/
+.nul/
 
 # Universal
 .DS_Store

@@ -1,0 +1,20 @@
+# Physical AI Textbook Backend Dependencies
+
+# Web framework
+fastapi==0.115.6
+uvicorn==0.34.0
+
+# Environment variables
+python-dotenv==1.0.1
+
+# AI and embeddings
+google-generativeai>=0.8.0
+
+# Vector database (optional - for production)
+qdrant-client>=1.12.0
+
+# Data validation
+pydantic>=2.0.0
+
+# HTTP client (for external API calls)
+httpx>=0.28.0
