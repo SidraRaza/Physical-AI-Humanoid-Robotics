@@ -1,3 +1,9 @@
+ai-textbook:
+  name: Physical AI Textbook Team
+  title: AI Education & Robotics Researchers
+  url: https://github.com/SidraRaza/Physical-AI-Humanoid-Robotics
+  image_url: https://raw.githubusercontent.com/SidraRaza/Physical-AI-Humanoid-Robotics/main/frontend/static/img/logo.svg
+
 yangshun:
   name: Yangshun Tay
   title: Ex-Meta Staff Engineer, Co-founder GreatFrontEnd
