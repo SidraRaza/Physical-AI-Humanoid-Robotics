@@ -1,19 +1,14 @@
 import { betterAuth } from 'better-auth';
-import { createClient } from '@libsql/client';
+import { Pool } from 'pg';
 
-// Create Turso database client
-const db = createClient({
-  url: process.env.TURSO_DATABASE_URL || 'file:auth.db',
-  authToken: process.env.TURSO_AUTH_TOKEN,
+// Create PostgreSQL pool for Supabase
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
 });
 
 export const auth = betterAuth({
-  // Database configuration using Turso (libsql)
-  database: {
-    provider: 'sqlite',
-    url: process.env.TURSO_DATABASE_URL || 'file:auth.db',
-    authToken: process.env.TURSO_AUTH_TOKEN,
-  },
+  // Database configuration using PostgreSQL (Supabase)
+  database: pool,
 
   // Email and password authentication
   emailAndPassword: {
