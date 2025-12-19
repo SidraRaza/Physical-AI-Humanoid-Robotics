@@ -4,10 +4,205 @@
         <title>Physical AI Textbook Blog</title>
         <link>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog</link>
         <description>Physical AI Textbook Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Feb 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Introduction to Deep Learning for Physical AI - Why It Matters]]></title>
+            <link>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics</link>
+            <guid>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics</guid>
+            <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Deep Learning is revolutionizing robotics and physical AI systems. From humanoid robots to autonomous vehicles, it's enabling machines to perceive, learn, and interact with the physical world. Let's understand what makes it so powerful for embodied systems.]]></description>
+            <content:encoded><![CDATA[<p>Deep Learning is revolutionizing robotics and physical AI systems. From humanoid robots to autonomous vehicles, it's enabling machines to perceive, learn, and interact with the physical world. Let's understand what makes it so powerful for embodied systems.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="deep-learning-in-physical-ai">Deep Learning in Physical AI<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#deep-learning-in-physical-ai" class="hash-link" aria-label="Direct link to Deep Learning in Physical AI" title="Direct link to Deep Learning in Physical AI" translate="no">​</a></h2>
+<p>Deep Learning enables robots to process sensory data, learn from interaction, and make intelligent decisions in real environments. Unlike traditional programming approaches, deep learning allows robots to adapt and improve through experience.</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">AI (Artificial Intelligence)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  └── Machine Learning</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        └── Deep Learning for Physical Systems</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── Robot Perception</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            ├── Motor Control</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">            └── Embodied Learning</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-deep-for-physical-ai">Why "Deep" for Physical AI?<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#why-deep-for-physical-ai" class="hash-link" aria-label="Direct link to Why &quot;Deep&quot; for Physical AI?" title="Direct link to Why &quot;Deep&quot; for Physical AI?" translate="no">​</a></h2>
+<p>The "deep" in deep learning refers to the number of layers in the network, which enables:</p>
+<table><thead><tr><th>Network Type</th><th>Layers</th><th>Capabilities</th></tr></thead><tbody><tr><td>Shallow</td><td>1-2</td><td>Simple sensor processing</td></tr><tr><td>Deep</td><td>3+</td><td>Complex perception &amp; control</td></tr><tr><td>Very Deep</td><td>50+</td><td>Humanoid-level intelligence</td></tr></tbody></table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-applications-in-robotics">Real-World Applications in Robotics<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#real-world-applications-in-robotics" class="hash-link" aria-label="Direct link to Real-World Applications in Robotics" title="Direct link to Real-World Applications in Robotics" translate="no">​</a></h2>
+<p>Deep learning powers many physical AI systems:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robot-perception">Robot Perception<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#robot-perception" class="hash-link" aria-label="Direct link to Robot Perception" title="Direct link to Robot Perception" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Object Recognition</strong> for manipulation tasks</li>
+<li class=""><strong>Scene Understanding</strong> for navigation</li>
+<li class=""><strong>Depth Estimation</strong> for 3D mapping</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="robot-control">Robot Control<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#robot-control" class="hash-link" aria-label="Direct link to Robot Control" title="Direct link to Robot Control" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Motor Learning</strong> for coordinated movement</li>
+<li class=""><strong>Balance Control</strong> for humanoid robots</li>
+<li class=""><strong>Grasping &amp; Manipulation</strong> for dexterous tasks</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="autonomous-systems">Autonomous Systems<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#autonomous-systems" class="hash-link" aria-label="Direct link to Autonomous Systems" title="Direct link to Autonomous Systems" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Humanoid Robot Navigation</strong> in complex environments</li>
+<li class=""><strong>Multi-robot Coordination</strong> and swarm intelligence</li>
+<li class=""><strong>Human-Robot Interaction</strong> and social robotics</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-deep-learning-for-physical-ai-now">Why Deep Learning for Physical AI Now?<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#why-deep-learning-for-physical-ai-now" class="hash-link" aria-label="Direct link to Why Deep Learning for Physical AI Now?" title="Direct link to Why Deep Learning for Physical AI Now?" translate="no">​</a></h2>
+<p>Three factors made advanced robotics possible today:</p>
+<ol>
+<li class=""><strong>Real-World Data</strong> - Rich sensory datasets from physical environments</li>
+<li class=""><strong>Simulation to Reality</strong> - Advanced simulators for safe training</li>
+<li class=""><strong>Hardware Advancement</strong> - Powerful embedded systems for real-time inference</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-physical-ai-development-workflow">The Physical AI Development Workflow<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#the-physical-ai-development-workflow" class="hash-link" aria-label="Direct link to The Physical AI Development Workflow" title="Direct link to The Physical AI Development Workflow" translate="no">​</a></h2>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">1. Collect Sensor Data  → Gather from cameras, IMU, force sensors</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. Preprocess Data     → Calibrate sensors, align modalities</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. Build Model         → Design for robot perception/control</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. Train in Simulation → Safe learning without physical damage</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">5. Transfer to Reality → Bridge sim-to-real gap</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">6. Deploy on Robot     → Real-world testing and refinement</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="common-deep-learning-architectures-for-robotics">Common Deep Learning Architectures for Robotics<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#common-deep-learning-architectures-for-robotics" class="hash-link" aria-label="Direct link to Common Deep Learning Architectures for Robotics" title="Direct link to Common Deep Learning Architectures for Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="convolutional-neural-networks-cnns">Convolutional Neural Networks (CNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#convolutional-neural-networks-cnns" class="hash-link" aria-label="Direct link to Convolutional Neural Networks (CNNs)" title="Direct link to Convolutional Neural Networks (CNNs)" translate="no">​</a></h3>
+<p>Best for: Robot vision and sensor processing</p>
+<ul>
+<li class="">Object detection for manipulation</li>
+<li class="">Visual SLAM for navigation</li>
+<li class="">Depth estimation for grasping</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recurrent-neural-networks-rnns">Recurrent Neural Networks (RNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#recurrent-neural-networks-rnns" class="hash-link" aria-label="Direct link to Recurrent Neural Networks (RNNs)" title="Direct link to Recurrent Neural Networks (RNNs)" translate="no">​</a></h3>
+<p>Best for: Sequential robot behaviors</p>
+<ul>
+<li class="">Walking gait learning</li>
+<li class="">Trajectory prediction</li>
+<li class="">Memory-based control</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reinforcement-learning-networks">Reinforcement Learning Networks<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#reinforcement-learning-networks" class="hash-link" aria-label="Direct link to Reinforcement Learning Networks" title="Direct link to Reinforcement Learning Networks" translate="no">​</a></h3>
+<p>Best for: Robot skill learning</p>
+<ul>
+<li class="">Motor skill acquisition</li>
+<li class="">Adaptive control strategies</li>
+<li class="">Task-specific behavior optimization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="graph-neural-networks-gnns">Graph Neural Networks (GNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#graph-neural-networks-gnns" class="hash-link" aria-label="Direct link to Graph Neural Networks (GNNs)" title="Direct link to Graph Neural Networks (GNNs)" translate="no">​</a></h3>
+<p>Best for: Multi-sensor fusion and robot structures</p>
+<ul>
+<li class="">Sensor network processing</li>
+<li class="">Robot kinematic chain modeling</li>
+<li class="">Multi-robot coordination</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-started-with-physical-ai">Getting Started with Physical AI<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#getting-started-with-physical-ai" class="hash-link" aria-label="Direct link to Getting Started with Physical AI" title="Direct link to Getting Started with Physical AI" translate="no">​</a></h2>
+<p>The best way to learn deep learning for robotics is by doing. Start with:</p>
+<ol>
+<li class=""><strong>Understand the basics</strong> - Read <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter1">Chapter 1: Introduction to Physical AI</a></li>
+<li class=""><strong>Explore ROS 2</strong> - Master the framework with <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter3">Chapter 3</a></li>
+<li class=""><strong>Learn perception</strong> - Study <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter4">Chapter 4: Perception Systems</a></li>
+<li class=""><strong>Practice control</strong> - Master <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter5">Chapter 5: Motion Planning &amp; Control</a></li>
+<li class=""><strong>Apply learning</strong> - Implement <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter6">Chapter 6: Learning for Robotics</a></li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-takeaways">Key Takeaways<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/intro-to-deep-learning-for-robotics#key-takeaways" class="hash-link" aria-label="Direct link to Key Takeaways" title="Direct link to Key Takeaways" translate="no">​</a></h2>
+<ul>
+<li class="">Deep learning enables robots to learn from physical interaction</li>
+<li class="">It automatically extracts features from sensor data</li>
+<li class="">It excels at complex real-world pattern recognition</li>
+<li class="">It's behind most advanced robotic capabilities</li>
+</ul>
+<p>Ready to start your Physical AI journey? The future of robotics is exciting!</p>]]></content:encoded>
+            <category>deep-learning</category>
+            <category>robotics</category>
+            <category>ai-fundamentals</category>
+            <category>beginner</category>
+        </item>
+        <item>
+            <title><![CDATA[Understanding Neural Networks for Physical AI - A Beginner's Guide]]></title>
+            <link>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics</link>
+            <guid>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics</guid>
+            <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Neural networks are the backbone of intelligent physical systems. In this post, we'll explore how they enable robots to perceive, learn, and interact with the physical world.]]></description>
+            <content:encoded><![CDATA[<p>Neural networks are the backbone of intelligent physical systems. In this post, we'll explore how they enable robots to perceive, learn, and interact with the physical world.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="neural-networks-in-physical-ai">Neural Networks in Physical AI<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#neural-networks-in-physical-ai" class="hash-link" aria-label="Direct link to Neural Networks in Physical AI" title="Direct link to Neural Networks in Physical AI" translate="no">​</a></h2>
+<p>Neural networks power many capabilities in robotics and physical AI systems. Unlike traditional programming, neural networks allow robots to learn patterns and behaviors from real-world interaction.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="key-applications-in-robotics">Key Applications in Robotics<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#key-applications-in-robotics" class="hash-link" aria-label="Direct link to Key Applications in Robotics" title="Direct link to Key Applications in Robotics" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="perception-systems">Perception Systems<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#perception-systems" class="hash-link" aria-label="Direct link to Perception Systems" title="Direct link to Perception Systems" translate="no">​</a></h3>
+<p>Neural networks process sensory data to help robots understand their environment:</p>
+<ul>
+<li class=""><strong>Computer Vision</strong>: Object recognition, scene understanding, and visual navigation</li>
+<li class=""><strong>Sensor Fusion</strong>: Combining data from cameras, LiDAR, IMU, and other sensors</li>
+<li class=""><strong>SLAM</strong>: Simultaneous Localization and Mapping for navigation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="control-systems">Control Systems<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#control-systems" class="hash-link" aria-label="Direct link to Control Systems" title="Direct link to Control Systems" translate="no">​</a></h3>
+<p>Neural networks enable sophisticated robot control:</p>
+<ul>
+<li class=""><strong>Motor Control</strong>: Learning optimal movement patterns and coordination</li>
+<li class=""><strong>Adaptive Control</strong>: Adjusting behavior based on environmental changes</li>
+<li class=""><strong>Grasping and Manipulation</strong>: Learning to handle objects of different shapes and materials</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="learning-systems">Learning Systems<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#learning-systems" class="hash-link" aria-label="Direct link to Learning Systems" title="Direct link to Learning Systems" translate="no">​</a></h3>
+<p>Neural networks enable robots to improve through experience:</p>
+<ul>
+<li class=""><strong>Reinforcement Learning</strong>: Learning optimal behaviors through trial and error</li>
+<li class=""><strong>Imitation Learning</strong>: Learning from human demonstrations</li>
+<li class=""><strong>Transfer Learning</strong>: Applying learned skills to new situations</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="architecture-for-physical-ai">Architecture for Physical AI<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#architecture-for-physical-ai" class="hash-link" aria-label="Direct link to Architecture for Physical AI" title="Direct link to Architecture for Physical AI" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="convolutional-neural-networks-cnns">Convolutional Neural Networks (CNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#convolutional-neural-networks-cnns" class="hash-link" aria-label="Direct link to Convolutional Neural Networks (CNNs)" title="Direct link to Convolutional Neural Networks (CNNs)" translate="no">​</a></h3>
+<p>Best for processing visual and spatial data from robot sensors:</p>
+<ul>
+<li class="">Processing camera images for object detection</li>
+<li class="">Depth estimation from stereo cameras</li>
+<li class="">Feature extraction for navigation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="recurrent-neural-networks-rnns">Recurrent Neural Networks (RNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#recurrent-neural-networks-rnns" class="hash-link" aria-label="Direct link to Recurrent Neural Networks (RNNs)" title="Direct link to Recurrent Neural Networks (RNNs)" translate="no">​</a></h3>
+<p>Ideal for sequential decision-making in dynamic environments:</p>
+<ul>
+<li class="">Predicting robot state over time</li>
+<li class="">Learning temporal patterns in sensor data</li>
+<li class="">Memory-based decision making</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="graph-neural-networks-gnns">Graph Neural Networks (GNNs)<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#graph-neural-networks-gnns" class="hash-link" aria-label="Direct link to Graph Neural Networks (GNNs)" title="Direct link to Graph Neural Networks (GNNs)" translate="no">​</a></h3>
+<p>Perfect for multi-sensor fusion and spatial relationships:</p>
+<ul>
+<li class="">Modeling robot kinematic chains</li>
+<li class="">Understanding spatial relationships between objects</li>
+<li class="">Multi-robot coordination</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-learning-process-in-robotics">The Learning Process in Robotics<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#the-learning-process-in-robotics" class="hash-link" aria-label="Direct link to The Learning Process in Robotics" title="Direct link to The Learning Process in Robotics" translate="no">​</a></h2>
+<p>Robots learn through interaction with the physical world:</p>
+<ol>
+<li class=""><strong>Data Collection</strong> - Gathering sensor data and action outcomes</li>
+<li class=""><strong>Pattern Recognition</strong> - Finding relationships between inputs and successful actions</li>
+<li class=""><strong>Behavior Optimization</strong> - Improving performance through experience</li>
+<li class=""><strong>Generalization</strong> - Applying learned behaviors to new situations</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="real-world-examples">Real-World Examples<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#real-world-examples" class="hash-link" aria-label="Direct link to Real-World Examples" title="Direct link to Real-World Examples" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="autonomous-navigation">Autonomous Navigation<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#autonomous-navigation" class="hash-link" aria-label="Direct link to Autonomous Navigation" title="Direct link to Autonomous Navigation" translate="no">​</a></h3>
+<p>Neural networks process camera and LiDAR data to:</p>
+<ul>
+<li class="">Detect obstacles and free space</li>
+<li class="">Plan safe paths through environments</li>
+<li class="">Recognize landmarks for localization</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="manipulation-tasks">Manipulation Tasks<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#manipulation-tasks" class="hash-link" aria-label="Direct link to Manipulation Tasks" title="Direct link to Manipulation Tasks" translate="no">​</a></h3>
+<p>Robots use neural networks to:</p>
+<ul>
+<li class="">Identify graspable objects</li>
+<li class="">Plan optimal grasp positions</li>
+<li class="">Adapt to object variations and uncertainties</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="human-robot-interaction">Human-Robot Interaction<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#human-robot-interaction" class="hash-link" aria-label="Direct link to Human-Robot Interaction" title="Direct link to Human-Robot Interaction" translate="no">​</a></h3>
+<p>Neural networks enable:</p>
+<ul>
+<li class="">Natural language understanding</li>
+<li class="">Gesture recognition</li>
+<li class="">Social behavior learning</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="try-it-yourself">Try It Yourself<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#try-it-yourself" class="hash-link" aria-label="Direct link to Try It Yourself" title="Direct link to Try It Yourself" translate="no">​</a></h2>
+<p>Want to understand neural networks in robotics better? Ask our <a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/chatbot">AI Chatbot</a> questions like:</p>
+<ul>
+<li class="">"How do robots learn to grasp objects?"</li>
+<li class="">"What is deep reinforcement learning in robotics?"</li>
+<li class="">"How do neural networks help with robot vision?"</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="next-steps">Next Steps<a href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/understanding-neural-networks-for-robotics#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps" translate="no">​</a></h2>
+<p>Ready to dive deeper? Check out:</p>
+<ul>
+<li class=""><a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter1">Chapter 1: Introduction to Physical AI</a></li>
+<li class=""><a class="" href="https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/docs/chapter6">Chapter 6: Learning for Robotics</a></li>
+</ul>
+<p>Keep learning, and remember - every expert was once a beginner!</p>]]></content:encoded>
+            <category>neural-networks</category>
+            <category>robotics</category>
+            <category>beginner</category>
+            <category>tutorials</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://sidraraza.github.io/Physical-AI-Humanoid-Robotics/blog/welcome</link>
