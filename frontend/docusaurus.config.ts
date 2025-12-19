@@ -89,6 +89,11 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/chatbot', label: 'Chatbot', position: 'left'},
         {
+          href: 'https://physical-ai-humanoid-robotics-roan.vercel.app/',
+          label: 'Dashboard',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/SidraRaza/Physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
