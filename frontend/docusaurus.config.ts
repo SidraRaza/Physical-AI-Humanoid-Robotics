@@ -89,7 +89,7 @@ const config: Config = {
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/chatbot', label: 'Chatbot', position: 'left'},
         {
-          href: 'https://physical-ai-humanoid-robotics-roan.vercel.app/',
+          href: 'https://physical-ai-humanoid-robotics-dashb.vercel.app/',
           label: 'Dashboard',
           position: 'left',
         },
