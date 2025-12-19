@@ -4,6 +4,7 @@ import { Pool } from 'pg';
 // Create PostgreSQL pool for Supabase
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 });
 
 export const auth = betterAuth({
@@ -48,6 +49,8 @@ export const auth = betterAuth({
   trustedOrigins: [
     'http://localhost:3000', // Docusaurus
     'http://localhost:3001', // Dashboard
+    'https://physical-ai-humanoid-robotics-dashb.vercel.app',
+    'https://physical-ai-humanoid-robotics-roan.vercel.app',
     process.env.NEXT_PUBLIC_DOCUSAURUS_URL || '',
     process.env.NEXT_PUBLIC_DASHBOARD_URL || '',
   ].filter(Boolean),
